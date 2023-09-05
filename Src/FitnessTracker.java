@@ -23,25 +23,65 @@ class FitnessTracker {
         this.phone = phone;
         this.age = 2020 - birthYear;
     }
-    public void setSurname(String surname) {
-        this.surname = surname;
-    }
-
     public void setWeight(int weight) {
         this.weight = weight;
     }
-
-    public void setPressure(String pressure) {
+    public void setSurname(String surname) {
+        this.surname = surname;
+    }
+    public void setPressure(String s) {
         this.pressure = pressure;
     }
 
-    public void setSteps(int steps) {
+    public void setSteps(int i) {
         this.steps = steps;
     }
+
 
     public int getAge() {
         return age;
     }
+
+    public String getName() {
+        return name;
+    }
+
+    public String getSurname() {
+        return surname;
+    }
+
+    public int getBirthDay() {
+        return birthDay;
+    }
+
+    public int getBirthMonth() {
+        return birthMonth;
+    }
+
+    public int getBirthYear() {
+        return birthYear;
+    }
+
+    public String getEmail() {
+        return email;
+    }
+
+    public long getPhone() {
+        return phone;
+    }
+
+    public int getWeight() {
+        return weight;
+    }
+
+    public String getPressure() {
+        return pressure;
+    }
+
+    public int getSteps() {
+        return steps;
+    }
+
     public void printAccountInfo() {
         System.out.println("Ім'я: " + name);
         if (surname != null) {
@@ -56,4 +96,6 @@ class FitnessTracker {
         System.out.println("Кількість кроків за день: " + steps);
         System.out.println();
     }
+
+
 }
